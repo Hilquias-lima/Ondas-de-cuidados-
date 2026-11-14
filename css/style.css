@@ -1,0 +1,333 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFCF8;
+    font-family: 'Lora', Georgia, serif;
+    color: #173B57;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #FFFFFF;
+}
+
+/* LOGOTIPO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo span {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    color: #204D70;
+    white-space: nowrap;
+}
+
+.logo em {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3989D6;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #173B57;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #709BB5;
+}
+
+/* BOTÃO DO CABEÇALHO */
+
+.botao-header {
+    background-color: #173B57;
+    color: #FFFFFF;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-header:hover {
+    background-color: #426D89;
+}
+
+/* RESPONSIVIDADE DO CABEÇALHO */
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .botao-header {
+        margin-top: 5px;
+    }
+}
+
+/* SEÇÃO PRINCIPAL - HERO */
+
+
+.hero {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    max-width: none;
+    min-height: 520px;
+    margin: 0;
+
+    padding: 50px max(24px, calc((100% - 1000px) / 2)) 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+    background-color: #FFFCF8;
+}
+
+
+/* ONDA NA DIVISÃO ENTRE AS SEÇÕES */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 55px;
+
+    background-image: url("../imagens/onda.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 100%;
+
+    pointer-events: none;
+}
+
+/* Mantém textos e imagem acima da onda */
+
+.hero-conteudo,
+.hero-imagem {
+    flex: 1;
+    max-width: 480px;
+}
+
+/* CONTEÚDO DE TEXTO */
+
+.hero-conteudo {
+    flex: 1;
+    max-width: 460px;
+}
+
+/* FRASE MANUSCRITA */
+
+.frase-destaque {
+    font-family: 'Caveat', cursive;
+    font-size: 27px;
+    color: #3989D6;
+    margin-bottom: 12px;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.hero-conteudo h1 {
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    line-height: 1.15;
+    color: #204D70;
+    margin-bottom: 25px;
+}
+
+/* DESCRIÇÃO */
+
+.descricao {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #526B7C;
+    margin-bottom: 28px;
+}
+
+/* BOTÕES */
+
+.hero-botoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* BOTÃO AZUL */
+
+.botao-principal {
+    background-color: #204D70;
+    color: #FFFFFF;
+}
+
+.botao-principal:hover {
+    background-color: #3989D6;
+}
+
+/* BOTÃO CONTORNADO */
+
+.botao-secundario {
+    border: 1px solid #204D70;
+    color: #204D70;
+}
+
+.botao-secundario:hover {
+    background-color: #204D70;
+    color: #FFFFFF;
+}
+
+/* IMAGEM PRINCIPAL */
+
+.hero-imagem {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 35px;
+}
+
+/* SEGUNDA SEÇÃO - SOBRE A MUSICOTERAPIA */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    width: 100%;
+    padding: 80px 8%;
+
+    background-color: #F7EDE0;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-radius: 25px;
+}
+
+.sobre-conteudo {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* CHAMADA MANUSCRITA: "O que é musicoterapia?" */
+
+.sobre-etiqueta {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: #367FC5;
+    margin-bottom: 5px;
+}
+
+/* TÍTULO DA SEGUNDA SEÇÃO */
+
+.sobre-conteudo h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* TEXTO DA SEGUNDA SEÇÃO */
+
+.sobre-conteudo p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* LINK PARA A PÁGINA DE BENEFÍCIOS */
+
+.sobre-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: #2675C8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre-link:hover {
+    text-decoration: underline;
+}
+
