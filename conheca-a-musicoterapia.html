@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ondas de Cuidados | Conheça a Musicoterapia</title>
+<meta name="description" content="Página educativa sobre musicoterapia: apresentação, pioneiros, experiências e evidências científicas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/conheca-a-musicoterapia.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="main-bar">
+    <a class="logo" href="index.html" aria-label="Ondas de Cuidados, ir para o início">
+      <img src="imagens/logo.png" alt="Símbolo Ondas de Cuidados">
+      <span>Ondas de <em>Cuidados</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="beneficios.html">Benefícios</a>
+      <a href="localizacao.html">Localização</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="musicas.html">Músicas</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="conheca-a-musicoterapia.html" class="botao-header" aria-current="page">Conheça a musicoterapia</a>
+      <button id="theme" type="button" aria-label="Alternar modo escuro e claro">
+        <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="titulo-hero">
+    <svg class="waves" viewBox="0 0 400 300" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true">
+      <path d="M0 120 Q50 30 100 120 T200 120 T300 120 T400 120"/>
+      <path d="M0 150 Q50 60 100 150 T200 150 T300 150 T400 150"/>
+      <path d="M0 180 Q50 100 100 180 T200 180 T300 180 T400 180"/>
+      <path d="M0 210 Q50 140 100 210 T200 210 T300 210 T400 210"/>
+    </svg>
+    <div class="wrap hero-content">
+      <span class="hand">Música, vínculo e cuidado</span>
+      <h1 id="titulo-hero">Conheça a Musicoterapia</h1>
+      <p>Muito além de ouvir: uma prática profissional que transforma experiências musicais em caminhos de expressão, comunicação e cuidado.</p>
+      <a class="btn" href="#apresentacao">Explore esta história <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <!-- APRESENTAÇÃO -->
+  <section id="apresentacao" class="section" aria-labelledby="titulo-apresentacao">
+    <div class="wrap intro">
+      <h2 id="titulo-apresentacao">A música é o meio. <span class="hand-title">A pessoa é o centro.</span></h2>
+      <div>
+        <p>Na musicoterapia, um profissional qualificado define objetivos, acompanha respostas e adapta experiências musicais às necessidades de cada pessoa. Cantar, improvisar, tocar e escutar podem fazer parte desse processo.</p>
+        <p>Uma playlist pode acolher um momento. Uma sessão de musicoterapia envolve também vínculo terapêutico, avaliação e acompanhamento. Os resultados variam; a prática não oferece cura nem substitui orientação clínica.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIONEIROS: SCROLLYTELLING -->
+  <section id="pioneiros" class="section alt" aria-labelledby="titulo-pioneiros">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="eyebrow">Uma história de escuta</span>
+        <h2 id="titulo-pioneiros">Pioneiros do cuidado musical.</h2>
+        <p class="lead">Um recorte da construção da profissão nos Estados Unidos, de 1903 a 1950. Role a página para avançar na linha do tempo.</p>
+      </header>
+
+      <div class="story" id="story">
+        <!-- Painel fixo: muda conforme a rolagem -->
+        <aside class="story-panel" aria-live="polite">
+          <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+          <p class="counter"><span id="counter-now">01</span> / <span id="counter-total">05</span></p>
+          <div class="panel-body" id="panel-body">
+            <span class="panel-year" id="panel-year">1903</span>
+            <h3 id="panel-name">Eva Augusta Vescelius</h3>
+            <h4>Trajetória</h4>
+            <p id="panel-path"></p>
+            <h4>Contribuição para a prática</h4>
+            <p id="panel-contrib"></p>
+          </div>
+          <ol class="dots" id="dots" aria-label="Marcos"></ol>
+        </aside>
+
+        <!-- Passos: ativam o painel ao entrar na área central da tela -->
+        <ol class="steps">
+          <li class="step" data-index="0" tabindex="0"
+              data-year="1903" data-name="Eva Augusta Vescelius"
+              data-path="Cantora e defensora do uso terapêutico da música nos Estados Unidos, Vescelius fundou a National Society of Musical Therapeutics em 1903."
+              data-contrib="Promoveu o debate e a organização de práticas musicais voltadas ao cuidado. Seu trabalho pertence a uma fase anterior à formação clínica padronizada; não equivale a um protocolo validado hoje.">
+            <article class="card">
+              <span class="year">1903</span>
+              <h3>Os primeiros caminhos</h3>
+              <b>Eva Augusta Vescelius</b>
+              <p>A organização do uso terapêutico da música começa a ganhar espaço.</p>
+            </article>
+          </li>
+          <li class="step" data-index="1" tabindex="0"
+              data-year="1926" data-name="Isa Maud Ilsen"
+              data-path="Enfermeira e musicista, Ilsen defendeu a presença da música em hospitais, em especial no atendimento a veteranos da Primeira Guerra Mundial."
+              data-contrib="Ajudou a aproximar profissionais de saúde e música, abrindo caminho para o cuidado musical em instituições.">
+            <article class="card">
+              <span class="year">1926</span>
+              <h3>Música nos hospitais</h3>
+              <b>Isa Maud Ilsen</b>
+              <p>O ambiente hospitalar passa a ocupar o centro da discussão.</p>
+            </article>
+          </li>
+          <li class="step" data-index="2" tabindex="0"
+              data-year="1936" data-name="Willem van de Wall"
+              data-path="Van de Wall publicou &quot;Music in Institutions&quot;, registrando experiências de música em hospitais, prisões e escolas."
+              data-contrib="Contribuiu para transformar iniciativas isoladas em práticas descritas e comparáveis, base para a futura sistematização.">
+            <article class="card">
+              <span class="year">1936</span>
+              <h3>Da experiência ao método</h3>
+              <b>Willem van de Wall</b>
+              <p>Um manual reúne orientações para o trabalho musical em instituições.</p>
+            </article>
+          </li>
+          <li class="step" data-index="3" tabindex="0"
+              data-year="1944" data-name="E. Thayer Gaston"
+              data-path="Na Michigan State University, foi criado o primeiro programa universitário de musicoterapia dos Estados Unidos, com forte influência de Gaston."
+              data-contrib="Reforçou a ideia de formação específica, pesquisa e avaliação dos efeitos da música no cuidado.">
+            <article class="card">
+              <span class="year">1944</span>
+              <h3>Formação universitária</h3>
+              <b>E. Thayer Gaston</b>
+              <p>A musicoterapia chega às universidades e à pesquisa.</p>
+            </article>
+          </li>
+          <li class="step" data-index="4" tabindex="0"
+              data-year="1950" data-name="National Association for Music Therapy"
+              data-path="A NAMT foi fundada em 1950 para reunir profissionais e definir padrões de formação e prática nos Estados Unidos."
+              data-contrib="Marcou a passagem de iniciativas individuais para uma profissão com identidade e critérios próprios.">
+            <article class="card">
+              <span class="year">1950</span>
+              <h3>Uma profissão organizada</h3>
+              <b>National Association for Music Therapy</b>
+              <p>Nasce uma associação profissional para a área.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIAS -->
+  <section id="experiencias" class="section" aria-labelledby="titulo-experiencias">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="eyebrow">O cuidado no cotidiano</span>
+        <h2 id="titulo-experiencias">Experiências que aproximam.</h2>
+        <p class="lead">Relatos simulados para fins educativos. Nomes e histórias são fictícios; não representam pacientes reais nem comprovam resultados clínicos.</p>
+      </header>
+      <div class="grid-3">
+        <figure class="quote">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 18v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8H4zm10 0v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8h-7z"/></svg>
+            <blockquote><p>“Às vezes eu não encontrava palavras para o que sentia. Improvisar alguns sons com a terapeuta me ajudou a começar uma conversa sobre esses sentimentos.”</p></blockquote>
+          </div>
+          <figcaption class="who"><span class="avatar">M</span><span><b>Marina</b><small>Pessoa em acompanhamento · Relato simulado</small></span></figcaption>
+        </figure>
+        <figure class="quote">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 18v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8H4zm10 0v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8h-7z"/></svg>
+            <blockquote><p>“Nas sessões com meu pai, uma canção conhecida criava oportunidades de estarmos juntos. Aprendi a valorizar esses momentos, sem esperar que a música recuperasse a memória dele.”</p></blockquote>
+          </div>
+          <figcaption class="who"><span class="avatar">C</span><span><b>Carlos</b><small>Familiar · Relato simulado</small></span></figcaption>
+        </figure>
+        <figure class="quote">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 18v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8H4zm10 0v-6c0-4 2-7 6-8l1 2c-2 1-3 2-3 4h3v8h-7z"/></svg>
+            <blockquote><p>“Durante a formação, entendi que a sessão não é uma apresentação. Escutar as escolhas da pessoa e adaptar a experiência faz tanta diferença quanto saber tocar.”</p></blockquote>
+          </div>
+          <figcaption class="who"><span class="avatar">L</span><span><b>Luiza</b><small>Estudante · Relato simulado</small></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDÊNCIAS -->
+  <section id="evidencias" class="section alt" aria-labelledby="titulo-evidencias">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="eyebrow">O que a ciência nos conta</span>
+        <h2 id="titulo-evidencias">Evidências, não promessas.</h2>
+        <p class="lead">Estudos ajudam a compreender possibilidades e limites. As pesquisas abaixo usam intervenções diferentes; nem todas são sessões clínicas de musicoterapia.</p>
+      </header>
+      <div class="grid-3">
+        <article class="stat">
+          <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Estresse e cortisol</h3>
+          <div class="big">18</div>
+          <strong>estudos na revisão</strong>
+          <small>1.165 participantes · contexto cirúrgico</small>
+          <svg class="chart" viewBox="0 0 200 64" fill="none" stroke="currentColor" stroke-width="2" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 C30 10 50 24 80 28 S130 40 160 44 S190 46 200 46"/><path d="M0 18H200" stroke-opacity=".25" stroke-width="1"/></svg>
+        </article>
+        <article class="stat">
+          <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 21h6M10 14v4M14 14v4"/></svg>Demência e Alzheimer</h3>
+          <div class="big">30</div>
+          <strong>estudos analisados</strong>
+          <small>1.720 participantes · Cochrane, 2025</small>
+          <svg class="chart" viewBox="0 0 200 64" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 32L50 8 100 32 150 8 190 32 150 56 100 32 50 56z"/><g fill="var(--card)"><circle cx="10" cy="32" r="5"/><circle cx="50" cy="8" r="5"/><circle cx="100" cy="32" r="5"/><circle cx="150" cy="8" r="5"/><circle cx="190" cy="32" r="5"/><circle cx="150" cy="56" r="5"/><circle cx="50" cy="56" r="5"/></g></svg>
+        </article>
+        <article class="stat">
+          <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.7A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>Dor e resposta corporal</h3>
+          <div class="big">2015</div>
+          <strong>revisão no The Lancet</strong>
+          <small>Música no cuidado perioperatório</small>
+          <svg class="chart" viewBox="0 0 200 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M0 36H40L50 20 62 52 74 14 86 50 98 28 110 36H200"/></svg>
+        </article>
+      </div>
+      <p class="note">Os números acima são ilustrativos e seguem o layout de referência. Confira cada dado nas fontes originais antes de citá-lo em trabalhos acadêmicos.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Ondas de Cuidados · Conteúdo educativo. Não substitui orientação de profissionais de saúde.</div>
+</footer>
+
+<script src="js/conheca-a-musicoterapia_script.js"></script>
+</body>
+</html>
