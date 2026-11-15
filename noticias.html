@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícias · Ondas de Cuidados</title>
+  <meta name="description" content="Pesquisas, descobertas e marcos da profissão, com contexto e acesso às fontes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/notíficas_style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-8 5-8 8 0s5 8 8 0 5-8 8 0"/></svg>
+      </span>
+      <span>Ondas de <em class="script">Cuidados</em></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="benefícios.html">Benefícios</a>
+      <a href="noticias.html" class="active">Notícias</a>
+      <a href="musicas.html">Músicas</a>
+      <a class="btn btn-primary" href="conheca-a-musicoterapia.html">Conheça a musicoterapia</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Alternar tema escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="noticias">
+
+  <section class="hero">
+    <div class="container">
+      <p class="script eyebrow-light">Conhecimento que aproxima</p>
+      <h1>Notícias</h1>
+      <p class="lead">Pesquisas, descobertas e marcos da profissão, com contexto e acesso às fontes.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="script eyebrow">Em foco</p>
+          <h2>Informação para seguir aprendendo.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar notícias">
+          <button class="chip is-active" data-filter="todas" aria-pressed="true">Todas</button>
+          <button class="chip" data-filter="pesquisas" aria-pressed="false">Pesquisas</button>
+          <button class="chip" data-filter="profissao" aria-pressed="false">Profissão</button>
+        </div>
+      </div>
+      <p class="intro">Seleção editorial de fontes publicadas. As datas abaixo são das publicações originais; as imagens são ilustrativas.</p>
+
+      <div class="news-grid">
+        <article class="news-card" data-category="pesquisas">
+          <div class="thumb thumb-scene" role="img" aria-label="Ilustração de duas pessoas em uma sessão musical, com violão e tambor"></div>
+          <div class="news-body">
+            <p class="news-cat">Pesquisas</p>
+            <h3>Música no cuidado de pessoas com demência</h3>
+            <p>Revisão Cochrane indica provável melhora de sintomas depressivos ao fim do tratamento. Efeitos duradouros e benefícios cognitivos continuam incertos.</p>
+            <p class="news-meta">
+              <time datetime="2025-03-07"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>7 de março de 2025</time>
+              <span>Cochrane</span>
+            </p>
+            <a class="read-more" href="https://www.cochrane.org" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="profissao">
+          <div class="thumb thumb-scene" role="img" aria-label="Ilustração de duas pessoas em uma sessão musical, com violão e tambor"></div>
+          <div class="news-body">
+            <p class="news-cat">Profissão</p>
+            <h3>Brasil reconhece a atividade profissional de musicoterapeuta</h3>
+            <p>A Lei nº 14.842 dispõe sobre a profissão, seus requisitos e competências em saúde, educação e outros espaços de cuidado.</p>
+            <p class="news-meta">
+              <time datetime="2024-04-11"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>11 de abril de 2024</time>
+              <span>Câmara dos Deputados</span>
+            </p>
+            <a class="read-more" href="https://www.camara.leg.br" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </article>
+
+        <article class="news-card" data-category="pesquisas">
+          <div class="thumb thumb-waves" role="img" aria-label="Ilustração em aquarela de uma pessoa ouvindo música com fones de ouvido">
+            <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <circle cx="90" cy="60" r="38" fill="var(--sand-deep)" opacity=".7"/>
+              <path d="M0 110c60-40 110 20 170 0s120-60 230-10v50c-90-40-150 10-210 20S60 150 0 180Z" fill="var(--blue-deep)" opacity=".45"/>
+              <path d="M110 280c0-60 30-90 90-90s90 30 90 90Z" fill="var(--sand-deep)"/>
+              <circle cx="200" cy="140" r="42" fill="#f4d3c0"/>
+              <path d="M158 140c-6-56 32-72 56-64s34 32 30 64c-12-24-24-36-48-37-21 0-32 11-38 37Z" fill="#1f3f63"/>
+              <path d="M160 136a40 40 0 0 1 80 0" fill="none" stroke="#fdfaf5" stroke-width="8" stroke-linecap="round"/>
+              <g fill="#2f6fa3" font-size="26"><text x="280" y="70">♫</text><text x="60" y="200">♪</text></g>
+            </svg>
+          </div>
+          <div class="news-body">
+            <p class="news-cat">Pesquisas</p>
+            <h3>Musicoterapia e depressão: o que diz uma revisão</h3>
+            <p>Publicação da Cambridge apresenta uma revisão Cochrane sobre musicoterapia associada ao cuidado habitual. A busca dos estudos foi realizada em 2016; a publicação não representa uma nova revisão de 2024.</p>
+            <p class="news-meta">
+              <time datetime="2024-02-22"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>22 de fevereiro de 2024</time>
+              <span>BJPsych Advances · Cambridge</span>
+            </p>
+            <a class="read-more" href="https://www.cambridge.org" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </article>
+      </div>
+      <p class="empty" hidden>Nenhuma notícia nesta categoria por enquanto.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt note">
+    <div class="container">
+      <h2 class="h-small">Ler a ciência também é cuidar.</h2>
+      <p>Um estudo não é uma promessa de resultado. Observe quem participou, qual intervenção foi utilizada e os limites encontrados. Informação educativa não substitui orientação clínica individual.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28C240 0 480 0 720 22s480 30 720 4V60H0Z" fill="currentColor"/></svg>
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">Ondas de <em class="script">Cuidados</em></p>
+      <p class="footer-tag">Informação, música e cuidado para todos.</p>
+    </div>
+    <div>
+      <h4>Navegue</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#beneficios">Benefícios</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="#musicas">Músicas</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="index.html#evidencias">Musicoterapia</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Sobre o projeto</h4>
+      <p>Projeto acadêmico de Front-end com finalidade educativa e informativa. Não substitui orientação de profissionais qualificados.</p>
+    </div>
+  </div>
+  <p class="copy container">© <span id="ano"></span> Ondas de Cuidados</p>
+</footer>
+
+<script src="js/notícias_script.js"></script>
+</body>
+</html>
