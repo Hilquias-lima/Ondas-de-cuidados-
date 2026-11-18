@@ -21,16 +21,15 @@
 
         <nav>
             <a href="index.html">Início</a>
-            <a href="benefícios.html">Benefícios</a>
+            <a href="beneficios.html">Benefícios</a>
             <a href="noticias.html">Notícias</a>
             <a href="musicas.html">Músicas</a>
         </nav>
 
-    <a href="conheca-a-musicoterapia.html" class="botao-header">
-        Conheça a musicoterapia
-    </a>
-</header>
-
+        <a href="conheca-a-musicoterapia.html" class="botao-header">
+            Conheça a musicoterapia
+        </a>
+    </header>
 
     <main>
         <section class="hero">
@@ -50,23 +49,17 @@
                     <a href="beneficios.html" class="botao-principal">
                         Conheça a musicoterapia
                     </a>
-
-                    <a href="localizacao.html" class="botao-secundario">
-                        Encontre um centro
-                    </a>
                 </div>
             </div>
 
             <div class="hero-imagem">
-                <img src="imagens/inicio.png"
-                     alt="Mulher ouvindo música com fones de ouvido">
+                <img src="imagens/inicio.png" alt="Mulher ouvindo música com fones de ouvido">
             </div>
         </section>
 
         <section class="sobre">
             <div class="sobre-imagem">
-                <img src="imagens/musicoterapia.png"
-                     alt="Ilustração sobre musicoterapia">
+                <img src="imagens/musicoterapia.png" alt="Ilustração sobre musicoterapia">
             </div>
 
             <div class="sobre-conteudo">
@@ -137,32 +130,9 @@
             </div>
         </section>
 
-        <!-- SEÇÃO DE LOCALIZAÇÃO -->
-        <section class="localizacao-inicio">
-            <div class="localizacao-banner">
-                <div class="localizacao-conteudo">
-                    <span class="localizacao-etiqueta">Localização</span>
-                    <h2>O cuidado pode estar mais perto do que você imagina.</h2>
-                    <p>
-                        Conheça centros e serviços de musicoterapia e descubra possibilidades de
-                        atendimento na sua região.
-                    </p>
-
-                    <div class="localizacao-busca">
-                        <input type="text" placeholder="Digite sua cidade ou endereço" aria-label="Digite sua cidade ou endereço">
-                        <button type="button">Buscar locais</button>
-                    </div>
-                </div>
-
-                <div class="localizacao-icone-grafico">
-                    <!-- Ícone estilizado de mapa/radar -->
-                    <div class="radar-circulo"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO DE NOTÍCIAS / MÚSICAS -->
         <section class="noticias-inicio">
+            <div class="onda-decorativa" aria-hidden="true"></div>
+
             <div class="noticias-cabecalho">
                 <span>Notícias e novidades</span>
                 <h2>Conhecimento que aproxima.</h2>
@@ -213,7 +183,84 @@
                 <a href="noticias.html" class="botao-todas-noticias">Ver todas as notícias</a>
             </div>
         </section>
+
+        <section class="secao-pausa" id="musicas">
+            <div class="onda-decorativa" aria-hidden="true"></div>
+            <div class="container pausa-grid">
+                <div class="pausa-conteudo">
+                    <span class="subtitulo-cursivo">um momento para respirar</span>
+                    <h2>Respire. Desacelere. Escute.</h2>
+                    <p class="descricao">
+                        Reserve alguns minutos para fazer uma pausa, ouvir uma música tranquila e prestar atenção ao momento presente.
+                    </p>
+                    <p class="aviso-legal">
+                        Esta é uma sugestão de pausa e não substitui uma sessão com profissional de musicoterapia.
+                    </p>
+                    <a href="#playlist" class="botao-principal">Ouvir músicas</a>
+                </div>
+
+                <div class="pausa-card">
+                    <div class="onda-sonora" id="onda-sonora" aria-hidden="true"></div>
+
+                    <div class="player-box">
+                        <button class="btn-play" id="btn-play" aria-label="Tocar ou pausar música">
+                            <svg id="icone-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                            <svg id="icone-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                            </svg>
+                        </button>
+
+                        <div class="player-info">
+                            <span class="tag-cursiva">sugestão musical</span>
+                            <h3>Espaço para uma música tranquila</h3>
+                            <p id="status-audio">Artista · duração</p>
+                        </div>
+                    </div>
+
+                    <audio id="audio-relaxante" preload="none">
+                        <source src="audios/musica-relaxante.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-col marca">
+                <h2>Ondas de <em>Cuidados</em></h2>
+                <p>Informação, música e cuidado para todos.</p>
+            </div>
+
+            <div class="rodape-col">
+                <h3>Navegue</h3>
+                <div class="links-duplos">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="conheca-a-musicoterapia.html">Musicoterapia</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="beneficios.html">Benefícios</a></li>
+                        <li><a href="musicas.html">Músicas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rodape-col sobre-projeto">
+                <h3>Sobre o projeto</h3>
+                <p>
+                    Projeto acadêmico de Front-end com finalidade educativa e informativa. Não substitui orientação de profissionais qualificados.
+                </p>
+            </div>
+        </div>
+
+        <div class="rodape-bottom">
+            <p>© 2026 Ondas de Cuidados · Projeto acadêmico</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
