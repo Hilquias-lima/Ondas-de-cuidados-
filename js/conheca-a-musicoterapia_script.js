@@ -16,6 +16,7 @@
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
     themeIcon.innerHTML = theme === "dark" ? SUN : MOON;
+    themeBtn.setAttribute("aria-pressed", String(theme === "dark"));
   }
 
   var saved = null;
@@ -53,7 +54,8 @@
     b.type = "button";
     b.setAttribute("aria-label", "Ir para o marco de " + step.dataset.year);
     b.addEventListener("click", function () {
-      step.scrollIntoView({ behavior: "smooth", block: "center" });
+      var reduzir = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      step.scrollIntoView({ behavior: reduzir ? "auto" : "smooth", block: "center" });
     });
     li.appendChild(b);
     dotsBox.appendChild(li);
@@ -66,7 +68,10 @@
     var d = steps[index].dataset;
 
     steps.forEach(function (s, i) { s.classList.toggle("active", i === index); });
-    dots.forEach(function (b, i) { b.classList.toggle("on", i === index); });
+    dots.forEach(function (b, i) {
+      b.classList.toggle("on", i === index);
+      b.setAttribute("aria-current", i === index ? "true" : "false");
+    });
     elNow.textContent = pad(index + 1);
     bar.style.width = ((index + 1) / steps.length * 100) + "%";
 
@@ -91,6 +96,7 @@
     elContrib.textContent = first.contrib;
     steps[0].classList.add("active");
     dots[0].classList.add("on");
+    dots[0].setAttribute("aria-current", "true");
     bar.style.width = (1 / steps.length * 100) + "%";
     current = 0;
 

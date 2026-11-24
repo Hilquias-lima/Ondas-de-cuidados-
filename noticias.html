@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/notíficas_style.css">
 </head>
 <body>
+<a class="skip-link" href="#noticias">Pular para o conteúdo principal</a>
 
 <header class="site-header">
   <a class="logo" href="index.html" aria-label="Ondas de Cuidados, ir para o início">
@@ -36,7 +37,7 @@
   <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" hidden><span></span><span></span><span></span></button>
 </header>
 
-<main id="noticias">
+<main id="noticias" tabindex="-1">
 
   <section class="hero">
     <div class="container">
@@ -72,7 +73,7 @@
               <time datetime="2025-03-07"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>7 de março de 2025</time>
               <span>Cochrane</span>
             </p>
-            <a class="read-more" href="https://www.cochrane.org" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a class="read-more" href="https://www.cochrane.org" target="_blank" rel="noopener" aria-label="Ler publicação completa: Música no cuidado de pessoas com demência (abre em nova aba)">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </div>
         </article>
 
@@ -86,7 +87,7 @@
               <time datetime="2024-04-11"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>11 de abril de 2024</time>
               <span>Câmara dos Deputados</span>
             </p>
-            <a class="read-more" href="https://www.camara.leg.br" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a class="read-more" href="https://www.camara.leg.br" target="_blank" rel="noopener" aria-label="Ler publicação completa: Brasil reconhece a atividade profissional de musicoterapeuta (abre em nova aba)">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </div>
         </article>
 
@@ -110,11 +111,12 @@
               <time datetime="2024-02-22"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>22 de fevereiro de 2024</time>
               <span>BJPsych Advances · Cambridge</span>
             </p>
-            <a class="read-more" href="https://www.cambridge.org" target="_blank" rel="noopener">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            <a class="read-more" href="https://www.cambridge.org" target="_blank" rel="noopener" aria-label="Ler publicação completa: Musicoterapia e depressão: o que diz uma revisão (abre em nova aba)">Ler publicação completa <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
           </div>
         </article>
       </div>
       <p class="empty" hidden>Nenhuma notícia nesta categoria por enquanto.</p>
+      <p class="sr-only" id="filtro-status" role="status" aria-live="polite"></p>
     </div>
   </section>
 
@@ -137,11 +139,10 @@
       <h4>Navegue</h4>
       <ul class="footer-links">
         <li><a href="index.html">Início</a></li>
-        <li><a href="index.html#beneficios">Benefícios</a></li>
-        <li><a href="noticias.html">Notícias</a></li>
-        <li><a href="#musicas">Músicas</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-        <li><a href="index.html#evidencias">Musicoterapia</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
+        <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="conheca-a-musicoterapia.html">Musicoterapia</a></li>
       </ul>
     </div>
     <div>

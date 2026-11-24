@@ -13,10 +13,13 @@
     var t = root.getAttribute('data-theme');
     return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
+  function syncPressed() { themeBtn.setAttribute('aria-pressed', String(isDark())); }
+  syncPressed();
   themeBtn.addEventListener('click', function () {
     var next = isDark() ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('tema', next); } catch (e) {}
+    syncPressed();
   });
 
   /* Menu mobile */

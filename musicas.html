@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/musicas_style.css">
 </head>
 <body>
+<a class="skip-link" href="#musicas">Pular para o conteúdo principal</a>
 
 <header class="site-header">
   <a class="logo" href="index.html" aria-label="Ondas de Cuidados, ir para o início">
@@ -36,7 +37,7 @@
   <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" hidden><span></span><span></span><span></span></button>
 </header>
 
-<main id="musicas">
+<main id="musicas" tabindex="-1">
 
   <section class="hero hero-music">
     <div class="container">
@@ -74,7 +75,7 @@
             <h3>Mar sereno</h3>
             <p class="track-meta">Ondas de Cuidados · Original instrumental · 1:00</p>
             <p>Acordes longos e notas espaçadas para uma pausa tranquila.</p>
-            <audio controls preload="none" src="audio/mar-sereno.wav">Seu navegador não suporta áudio.</audio>
+            <audio controls preload="none" src="audio/mar-sereno.wav" aria-label="Reproduzir a faixa Mar sereno">Seu navegador não suporta áudio.</audio>
           </div>
         </article>
 
@@ -87,7 +88,7 @@
             <h3>Fio de atenção</h3>
             <p class="track-meta">Ondas de Cuidados · Original instrumental · 1:00</p>
             <p>Uma sequência instrumental regular, sem vozes.</p>
-            <audio controls preload="none" src="audio/fio-de-atencao.wav">Seu navegador não suporta áudio.</audio>
+            <audio controls preload="none" src="audio/fio-de-atencao.wav" aria-label="Reproduzir a faixa Fio de atenção">Seu navegador não suporta áudio.</audio>
           </div>
         </article>
 
@@ -100,7 +101,7 @@
             <h3>Pausa suave</h3>
             <p class="track-meta">Ondas de Cuidados · Original instrumental · 1:00</p>
             <p>Timbres suaves e um andamento sem pressa.</p>
-            <audio controls preload="none" src="audio/pausa-suave.wav">Seu navegador não suporta áudio.</audio>
+            <audio controls preload="none" src="audio/pausa-suave.wav" aria-label="Reproduzir a faixa Pausa suave">Seu navegador não suporta áudio.</audio>
           </div>
         </article>
 
@@ -113,11 +114,12 @@
             <h3>Luz da manhã</h3>
             <p class="track-meta">Ondas de Cuidados · Original instrumental · 1:00</p>
             <p>Uma melodia leve para acompanhar o seu momento.</p>
-            <audio controls preload="none" src="audio/luz-da-manha.wav">Seu navegador não suporta áudio.</audio>
+            <audio controls preload="none" src="audio/luz-da-manha.wav" aria-label="Reproduzir a faixa Luz da manhã">Seu navegador não suporta áudio.</audio>
           </div>
         </article>
       </div>
       <p class="empty" hidden>Nenhuma música nesta categoria por enquanto.</p>
+      <p class="sr-only" id="filtro-status" role="status" aria-live="polite"></p>
     </div>
   </section>
 
@@ -145,11 +147,10 @@
       <h4>Navegue</h4>
       <ul class="footer-links">
         <li><a href="index.html">Início</a></li>
-        <li><a href="index.html#beneficios">Benefícios</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
         <li><a href="noticias.html">Notícias</a></li>
-        <li><a href="musicas.html">Músicas</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-        <li><a href="index.html#evidencias">Musicoterapia</a></li>
+        <li><a href="musicas.html" aria-current="page">Músicas</a></li>
+        <li><a href="conheca-a-musicoterapia.html">Musicoterapia</a></li>
       </ul>
     </div>
     <div>
