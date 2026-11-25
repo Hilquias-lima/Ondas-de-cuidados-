@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html" aria-label="Ondas de Cuidados, ir para o início">
+            <img src="imagens/logo.png" alt="Símbolo Ondas de Cuidados">
+            <span>Ondas de <em>Cuidados</em></span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="beneficios.html">Benefícios</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="musicas.html">Músicas</a>
+            <a href="localidade.html" aria-current="page" >Onde encontrar?</a>
+        </nav>
+
+        <a href="conheca-a-musicoterapia.html" class="botao-header">
+            Conheça a musicoterapia
+        </a>
+    </header>
+
+<main>
+    <div class="inicioPagOE">
+        <div class="conteudoOE">
+            <p class="fraseOE" id="stlFraseOE">Onde posso encontrar esse tratamento perto do meu endereço?</p>
+            <h1 class="fraseOE tituloOE">Onde procurar?</h1>
+            <p class="fraseOE descricaoOE">Aqui você vai conseguir tirar todas as suas dúvidas a respeito de como achar esse tratamento próximo ao seu endereço</p>
+        </div>
+    </div>
+
+<section class="secaoBuscaOE" aria-label="Buscar clínicas de musicoterapia">
+        <div class="conteudoOE">
+            <div class="painelBuscaOE">
+                <form class="formBuscaOE" id="formBuscaClinicas">
+                    <label for="inputEnderecoOE" class="labelBuscaOE">
+                        Digite seu CEP (8 números), bairro ou cidade
+                    </label>
+                    <div class="linhaCampoOE">
+                        <input
+                            type="text"
+                            id="inputEnderecoOE"
+                            class="inputEnderecoOE"
+                            placeholder="Ex.: 58038-000, Manaíra ou João Pessoa"
+                            autocomplete="postal-address"
+                        >
+                        <button type="submit" class="btnBuscarOE" id="btnBuscarClinicas">
+                            Buscar clínicas
+                        </button>
+                        <button type="button" class="btnLimparOE" id="btnLimparBusca">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Filtros rápidos por modalidade -->
+                <div class="filtrosOE" role="group" aria-label="Filtrar por modalidade">
+                    <button type="button" class="chipFiltroOE ativo" data-filtro="todas">Todas</button>
+                    <button type="button" class="chipFiltroOE" data-filtro="Presencial">Presencial</button>
+                    <button type="button" class="chipFiltroOE" data-filtro="Online">Online</button>
+                    <button type="button" class="chipFiltroOE" data-filtro="Infantil">Infantil</button>
+                </div>
+            </div>
+
+            <!-- Mensagem de status e endereço encontrado pelo CEP -->
+            <p class="statusBuscaOE" id="statusBuscaClinicas" aria-live="polite"></p>
+
+            <!-- Grade onde o JS renderiza os cards das clínicas -->
+            <div class="gradeClinicasOE" id="gradeClinicas"></div>
+
+            <!-- Estado vazio acolhedor (aparece quando não há clínicas para a busca) -->
+            <div class="estadoVazioOE" id="estadoVazioClinicas" hidden>
+                <div class="iconeVazioOE" aria-hidden="true">🎵</div>
+                <h2 class="tituloVazioOE">Ainda não chegamos pertinho desse endereço...</h2>
+                <p class="textoVazioOE" id="textoVazioDetalhes">
+                    Poxa, ainda não temos clínicas presenciais cadastradas nessa região. Mas você não precisa ficar sem cuidado: que tal conhecer nossas opções de atendimento online ou ver todas as clínicas disponíveis?
+                </p>
+                <div class="acoesVazioOE">
+                    <button type="button" class="btnBuscarOE" id="btnVerOnline">
+                        Ver atendimento online
+                    </button>
+                    <button type="button" class="btnLimparOE" id="btnMostrarTodas">
+                        Mostrar todas as clínicas
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bloco orientativo harmonizado com o estilo das outras seções -->
+            <aside class="avisoCuidadoOE" aria-label="Orientações antes de agendar">
+                <h2 class="tituloAvisoOE">O que observar antes de iniciar.</h2>
+                <p class="textoAvisoOE">
+                    Verifique a formação e o registro profissional do musicoterapeuta, converse sobre objetivos e disponibilidade de horários e lembre-se de que este espaço tem caráter informativo e não substitui avaliação médica ou psicológica individual.
+                </p>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<script src="js/onde-encontrar.js"></script>
+</body>
+</html>
