@@ -1427,3 +1427,330 @@ nav a[aria-current="page"] {
     font-weight: 600;
 }
 
+.inicioPagOE {
+    background-color: #1b365d;
+    width: 100%;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding: 48px 0;
+}
+
+/* Contêiner padrão que alinha todas as seções na mesma margem esquerda */
+.conteudoOE {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Estilo base compartilhado pelos textos do banner */
+.fraseOE {
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+}
+
+/* Pergunta introdutória em fonte cursiva */
+#stlFraseOE {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+/* Título principal da seção */
+.tituloOE {
+    font-family: 'Lora', serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+
+/* Texto descritivo abaixo do título */
+.descricaoOE {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================================
+   BUSCA POR CEP / ENDEREÇO E FILTROS
+   ========================================================= */
+
+.secaoBuscaOE {
+    background-color: #fbf7f2;
+    padding: 48px 0 64px;
+}
+
+.painelBuscaOE {
+    background-color: #ffffff;
+    border: 1px solid #e7dfd4;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(27, 54, 93, 0.05);
+}
+
+.labelBuscaOE {
+    display: block;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b365d;
+    margin-bottom: 10px;
+}
+
+.linhaCampoOE {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.inputEnderecoOE {
+    flex: 1 1 280px;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+.inputEnderecoOE:focus {
+    outline: 2px solid #1b365d;
+    outline-offset: 1px;
+    border-color: #1b365d;
+}
+
+.btnBuscarOE,
+.btnLimparOE {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.btnBuscarOE {
+    background-color: #1b365d;
+    color: #ffffff;
+}
+
+.btnBuscarOE:hover {
+    opacity: 0.92;
+}
+
+.btnLimparOE {
+    background-color: #efe7dc;
+    color: #1b365d;
+}
+
+.btnLimparOE:hover {
+    background-color: #e4d8c8;
+}
+
+/* Botões de filtro por modalidade */
+.filtrosOE {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.chipFiltroOE {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #d6cbbd;
+    background-color: #fbf7f2;
+    color: #1b365d;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chipFiltroOE.ativo {
+    background-color: #1b365d;
+    color: #ffffff;
+    border-color: #1b365d;
+}
+
+/* =========================================================
+   STATUS, CARDS DE CLÍNICAS, ROTA E TEMPO ESTIMADO
+   ========================================================= */
+
+.statusBuscaOE {
+    margin: 24px 0 18px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: #475569;
+}
+
+.gradeClinicasOE {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cardClinicaOE {
+    background-color: #ffffff;
+    border: 1px solid #e7dfd4;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    box-shadow: 0 6px 18px rgba(27, 54, 93, 0.04);
+}
+
+.cardTopoOE {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cardNomeOE {
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1b365d;
+    margin: 0;
+}
+
+.badgeModalidadeOE {
+    background-color: #e6eff8;
+    color: #1b365d;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.enderecoCompletoOE {
+    background-color: #fbf7f2;
+    border-left: 3px solid #1b365d;
+    padding: 10px 12px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #1e293b;
+}
+
+.cardDescricaoOE {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+    margin: 0;
+}
+
+.temposRotaOE {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #1b365d;
+    background-color: #eef4fa;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.temposRotaOE span {
+    font-weight: 600;
+}
+
+.cardRodapeOE {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #f1ebe3;
+    font-size: 13px;
+    color: #1b365d;
+    font-weight: 600;
+}
+
+.linkMapaOE {
+    color: #1b365d;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* =========================================================
+   ESTADO VAZIO ACOLHEDOR E ORIENTAÇÕES FINAIS
+   ========================================================= */
+
+.estadoVazioOE {
+    background-color: #ffffff;
+    border: 1px dashed #cbd5e1;
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+    max-width: 620px;
+    margin: 12px auto 0;
+    box-shadow: 0 8px 24px rgba(27, 54, 93, 0.04);
+}
+
+.iconeVazioOE {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background-color: #e6eff8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.tituloVazioOE {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1b365d;
+    margin-bottom: 8px;
+}
+
+.textoVazioOE {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 480px;
+    margin: 0 auto 22px;
+}
+
+.acoesVazioOE {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.avisoCuidadoOE {
+    margin-top: 44px;
+    background-color: #f3eadf;
+    border-radius: 18px;
+    padding: 28px 32px;
+}
+
+.tituloAvisoOE {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #1b365d;
+    margin-bottom: 10px;
+}
+
+.textoAvisoOE {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 760px;
+    margin: 0;
+}
